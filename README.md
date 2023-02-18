@@ -1,2 +1,2 @@
 # Java_Exception
- Создание собственного Exception
+ Создание собственного Exception, Enum
