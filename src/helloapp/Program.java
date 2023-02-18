@@ -10,13 +10,18 @@ public class Program {
 		        Validator.NumberValidator(number);
 		        System.out.println(number);		        
 		    }
-		  catch(NonPositiveException ex){
-		         
-			  	System.out.println(NonPositiveException.serialVersionUID);
+		  catch(NonPositiveException ex){		         
+			   
+			  	System.out.println(Exceptions.NON_POSITIVE_EXCEPTION + ":" + NonPositiveException.serialVersionUID);
 		        System.out.println(ex.getMessage());
 		        System.out.println(ex.getNumber());		        
 		    }
 	  }
+}
+
+enum Exceptions{
+	NON_POSITIVE_EXCEPTION,
+	EXCEPTION
 }
 
 class NonPositiveException extends Exception{
